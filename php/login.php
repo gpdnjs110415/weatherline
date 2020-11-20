@@ -1,3 +1,3 @@
 <?php
-    header("Location:");
+    header( 'Location:D:\project\weatherline\html\main.html' );
 ?>

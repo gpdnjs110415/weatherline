@@ -7,9 +7,16 @@
     <title>웨더라인</title>
     <link rel="stylesheet" href="../css/main.css">
     <script src="https://kit.fontawesome.com/25db3b04f4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/weatherinfo.js"></script>
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 
 <body>
+    <div class="setting">
+        <a href="../html/setting.html"><i class="fas fa-cog"></i></a>
+
+    </div>
     <div id="main">
         <div id="weather-container">
             <div class="title-container">
@@ -27,10 +34,10 @@
                     <img src="../image/sun.svg" alt="">
                 </div>
                 <div class="weather-info-text">
-                    <p id="weather-info-num">18º</p>
-                    <p id="weather-info-lan">매우 맑음</p>
+                    <p class="weather-info-num" id="temperature-celcius"></p>
+                    <p class="weather-info-lan" id="overall">매우 맑음</p>
                     <div class="weather-info-text-percent">
-                        <p>강수확률 0%</p>
+                        <p id="humidity">습도 0%</p>
                         <p>미세먼지 60mg</p>
                     </div>
                 </div>
@@ -55,11 +62,15 @@
             </div>
         </div>
     </div>
-    <div id="nav">
-        <div id="user"><a href="../html/user.html"><i class="far fa-user"></i></a></div>
-        <div class="weather"><a href="../html/weather.html"></a><i class="far fa-sun"></i></a></div>
-        <div class="codi"><a href="../html/codi.html"></a><i class="fas fa-tshirt"></i></a></div>
-        <div class="heart"><a href="../html/heart.html"></a><i class="far fa-heart"></i></a></div>
+
+    <div class="nav">
+        <div class="nav-icon">
+            <div class="user"><a href="../html/user.html"><i class="far fa-user"></i></a></div>
+            <div class="weather" id="now-icon"><a href="../html/weather.html"></a><i class="far fa-sun"></i></a></div>
+            <div class="codi"><a href="../html/codi.html"></a><i class="fas fa-tshirt"></i></a></div>
+            <div class="heart"><a href="../html/heart.html"></a><i class="far fa-heart"></i></a></div>
+        </div>
+        <img class="nav-bar" src="../image/nav-bar.png" alt="">
     </div>
 
     <script src="../js/backgroundgrad.js"></script>
